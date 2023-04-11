@@ -88,6 +88,8 @@ if (process.env.NODE_ENV !== 'production') {
     })
     try{
       comment.save()
+      console.log("===comments===")
+      console.log(comment)
       res.redirect('/')
     }catch (e) {
       //get the error and render back to the creating state
