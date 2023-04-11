@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- <!creater header of the page>
+    <ul>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/contact">Contact Us</a></li>
+  <li><a href ="/all">All Articles</a></li>
+  <li><a href="/">Home</a></li>
+</ul> -->
+
+<!-- <!import bootstrap and other css> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+
+<!-- title of the page -->
+<title>Login</title>
+</head>
+
+<body>
+<!-- this is the login page for the user -->
+<div class="container">
+<h1>Login <i class="fa fa-sign-in"></i></h1>
+
+<%if(messages.error){ %>
+<%= messages.error%>
+<%}%>
+
+<!-- <!create form for the login section> -->
+<div class="bg-img">
+<form action = "/login" method = "POST" class="form-con">
+
+<div>
+  <label for="email">Email</label>
+  <i class="fa fa-envelope icon"></i>
+  <input type ="email" id = "email" name = "email" required>
+</div>
+
+<div>
+  <label for="password">Password</label>
+  <i class="fa fa-key icon"></i>
+  <input type ="password" id = "password" name = "password" required>
+</div>
+
+<!-- <! login button to login> -->
+<button type = "submit" class="btn btn-primary">Login</button>
+
+
+</form>
+</div>
+
+
+<!-- <!A link back to register for user who doesnt register yet> -->
+<a href="/register"> Register </a>
+</div>
+
+
+
+<style>
+  /* css of this page */
+
+.form-con{
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+form{
+  padding :40px;
+  margin:10px;
+}
+
+/* header */
+h1{
+  padding :10px;
+  margin:15px;
+}
+
+/* paragraph */
+p{
+  padding :10px;
+  margin:15px;
+}
+
+/* nav menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+li {
+display: inline;
+float: right;
+padding:5px;
+}
+
+/* links */
+a{
+
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+
+/* Style inputs with type="text", "email" and  textareas */
+input[type=password],input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+
+}
+
+/* background image of the login console */
+.bg-img{
+  background-image: url('https://img.freepik.com/free-photo/top-view-photo-camera-with-copy-space_23-2148666236.jpg?w=1380&t=st=1680896713~exp=1680897313~hmac=9165830c81e88084fbe082d7bb8238a15136ae30ec325139f205ea26f7f320aa');
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  min-height: 400px;
+  max-width: auto;
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+</body>
+</html>

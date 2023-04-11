@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- <!import bootstrap and other css> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+<!-- <!creater header of the page> -->
+<div class="header">
+  <ul>
+  <li><a href="/contact">Contact Us</a></li>
+  <li><a href ="/all">All Articles</a></li>
+  <li><a href="/">Home</a></li>
+</ul>
+</div>
+
+<!-- title of the page -->
+<title>Contact Us</title>
+</head>
+
+
+<!body>
+<body>
+<div class="container">
+<h1>Contact Us <i class ="fa fa-phone"></i> </h1>
+
+<p> Have any questions? Feel free to contact us.</p>
+
+<!-- <!make a form to let user fill in> -->
+
+<form action = "/contact" method = "POST">
+<!-- name -->
+<div>
+  <br><label for="name">Fisrt Name: </label>
+  <input type ="text" id = "name" name = "Fname" placeholder="Your name.." required>
+</div>
+
+<div>
+  <br><label for="name">Last Name: </label>
+  <input type ="text" id = "name" name = "Lname" placeholder="Your last name.." required>
+</div>
+<!-- email -->
+<div>
+  <br><label for="email">Email: </label>
+  <input type ="email" id = "email" name = "email" placeholder="Your email" required>
+</div>
+
+<!-- message that wants to say -->
+<div>
+  <br><label for="message">Message : </label>
+  <textarea id = "message" name = "message" style="height:200px" placeholder="Write something.."  required></textarea>
+</div>
+
+<!-- <!button to submit the form> -->
+<br><button type = "submit"  class= "btn btn-primary">Submit</button>
+</form>
+
+
+<!-- <!footer for the html> -->
+
+<footer class="footer">
+
+      <div class="footer-left">
+
+        <h3>The Daily<span>Blog</span></h3>
+
+        <p class="footer-links">
+          <a href="/" class="link-1">Home</a>   
+          <a href="/contact">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Daily Blog © 2023</p>
+      </div>
+
+      <div class="footer-center">
+
+
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+353234505445</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:abc@thedailyblog.com">abc@thedailyblog.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the website</span>
+          We are a blog website to let you share your own story
+        </p>
+
+
+        <!-- <!footer icons from css> -->
+        <div class="footer-icons">
+
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>  
+        <a href="https://twitter.com/login" class="fa fa-twitter"></a>  
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>  
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- <!Css of the website> -->
+
+<style>
+/* header css */
+h1{
+  padding :10px;
+  margin:15px;
+}
+p{
+  padding :10px;
+  margin:15px;
+}
+
+.header a{
+
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+border-bottom: 3px solid transparent;
+}
+
+/* form css */
+form{
+  padding :40px;
+  margin:10px;
+}
+
+/* nav menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+li {
+display: inline;
+float: right;
+padding:5px;
+}
+
+
+
+
+/* Style inputs with type="text", "email" and  textareas */
+input[type=text],input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize:none
+
+}
+footer{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 20px;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+footer .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+footer h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+footer h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+footer .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+footer .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+footer .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+footer .footer-center{
+  width: 35%;
+}
+
+footer .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+footer .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+footer .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+footer .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+footer .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+footer .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+footer .footer-right{
+  width: 20%;
+}
+
+footer .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+footer .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .footer-icons{
+  margin-top: 25px;
+}
+
+footer .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+</body>
+</html>

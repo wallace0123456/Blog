@@ -1,0 +1,59 @@
+
+<!-- <!form that uses to create new article> -->
+
+<!-- title of the article -->
+<div class="form">
+  <label for="title">Title</label>
+  <input required value = "<%=article.title%> " type ="text" name = "title" id="title" 
+  class = "form-control">
+</div>
+
+
+<!-- image url -->
+<div class="form">
+  <label for="image">Image url</label>
+  <input value = "<%=article.image%>" type ="text" name = "image" id="image" 
+  class = "form-control">
+</div>
+
+
+
+<!-- author of the article -->
+<div class="form">
+  <label for="author">Author</label>
+  <input required value = "<%=article.author%> " type ="author" name = "author" id="author" 
+  class = "form-control">
+</div>
+
+
+<!-- description of the article -->
+<div class="form">
+  <label for="description">Description</label>
+  <textarea rows="5" cols="50" name = "description" id= "description" class = "form-control">
+  <%=article.description%>
+  </textarea>
+</div>
+
+<!-- Note of the article -->
+<div class="form"> 
+  <label for="note">Note</label>
+  <textarea required rows="5" cols="50" name = "note" id= "note" class = "form-control">
+  <%=article.note%>
+  </textarea>
+</div>
+
+<!-- button for user to save the edit  -->
+<a href="/" class="btn btn-secondary"> Cancel</a>
+<button type="submit" class= "btn btn-primary">Save</button>
+
+
+<!-- <! css to decorate the site to make it looks better> -->
+<style>
+textarea{
+  resize:none
+}
+
+button{
+  margin:10px;
+}
+</style>

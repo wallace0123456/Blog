@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- <! insert bootstrap for the website> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<!-- title of the blog -->
+<title>Edit post</title>
+</head>
+
+
+
+
+<body>
+  <!-- page of editing the post -->
+  <div class = "container">
+  <h1> Edit Article</h1> 
+
+  <!-- <!create a form and include it in form.ejs> -->
+  <form action="/articles/<%=article.id%>?_method=PUT" method="POST">
+  <%- include('form')%>
+  </form>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
