@@ -73,7 +73,7 @@ function saveArticleAndRedirect(path){
     article.author =req.body.author
     article.image = req.body.image
 
-    
+    //save the data to database
     try {
       article = await article.save();
       res.redirect(`/articles/${article.slug}`);
