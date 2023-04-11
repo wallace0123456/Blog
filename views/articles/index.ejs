@@ -37,7 +37,14 @@
 
 <!-- button to create a new article -->
 <a href = "/articles/new" class="btn btn-success"> New Article <i class="fa fa-pencil"></i></a>
-
+<br>
+<div class= 'intro'>
+<h2>Introduction :</h2> 
+<p>Welcome to the daily blog, you can post anything you want as a blog! Let's describe a blog : 
+  A blog features diary-type commentary and links to articles on other websites, 
+  usually presented as a list of entries in reverse chronological order. 
+  Blogs range from the personal to the political, and can focus on one narrow subject or a whole range of subjects. So, let's dive in and share your life!</p>
+</div>
 <!-- <! Show 10 article that exist> -->
 <% articles.slice(0,10).forEach(article =>{%>
   <div class = "card mt-4">
@@ -148,6 +155,15 @@ font-size: 17px;
 border-bottom: 3px solid transparent;
 }
 
+
+
+
+/* give intro class a  border and spacing */
+.intro {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #999;
+}
 
 /* nav menu */
 ul {
